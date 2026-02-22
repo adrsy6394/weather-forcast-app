@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+    .glass-card {
+        @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg rounded-xl dark:bg-slate-800/70 dark:border-slate-700/50;
+    }
+    .glass-panel {
+        @apply bg-white/40 backdrop-blur-sm border border-white/10 dark:bg-slate-800/40;
+    }
+}
