@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const testAuth = async () => {
-    const API_URL = 'http://localhost:5000/api/v1/auth';
+    const API_URL = `${process.env.API_URL}/auth`;
     const uniqueEmail = `test_${Date.now()}@example.com`;
 
     try {

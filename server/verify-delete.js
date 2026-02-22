@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API_URL = 'http://localhost:5000/api/v1/auth';
+const API_URL = `${process.env.API_URL}/auth`;
 
 const runTest = async () => {
     const email = `verify_${Date.now()}@example.com`;
